@@ -1,0 +1,22 @@
+
+header {
+    background-color: rgb(205, 180, 228);
+    height: 60px;
+}
+
+.myHeader {
+    font-size: 48px;
+}
+
+.colorRed {
+    color:red;
+}
+
+.colorGreen {
+    font-size: 28px;
+    color:green;
+}
+
+#myHeader {
+    color:greenyellow;
+}

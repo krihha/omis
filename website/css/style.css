@@ -1,0 +1,193 @@
+
+header {
+    background-color: rgb(156, 223, 196);
+    height: 64px;
+}
+body{
+    margin: 0;
+    padding:0;
+}
+
+.fa-canadian-maple-leaf
+{
+    font-size: 50px;
+    color:rgb(252, 252, 253);
+    position: relative;
+    top: 3px;
+    margin: 5px;
+}
+
+/* search form element*/
+
+form {
+    display: inline-block;
+position: relative;
+top: -12px;
+}
+
+form input[type="text"] {
+    border: 1px solid firebrick; 
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right:0;
+    outline: none;
+height: 35px;
+}
+
+form button {
+    border: 1px solid firebrick; 
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: rgb(185, 241, 232);
+    border-left: 0;
+    margin-left: -5px;
+    height:39px;
+    width: 39px;
+}
+
+
+/* menu*/
+
+nav ul li a{
+    color:honeydew;
+    text-decoration: none;
+    text-align: center;
+   text-transform: capitalize;
+}
+
+nav ul li {
+ list-style-type: none;
+ display: inline-block;
+ width: 100px;
+ text-align: center;
+}
+.fas {
+    text-align: center;
+    width: 100%;
+}
+nav ul li a .fab {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color:rgb(240, 220, 230);
+}
+
+nav {
+    width: 600px;
+    float:right;
+}
+
+.leftCol {
+    width: 250px;
+    margin:  5px;
+    float: left;
+}
+
+.profile 
+{
+    border: 1px solid grey;
+}
+.profile .row1 {
+
+    background-color: rgb(156, 223, 196);
+    display: block;
+    height: 100px;
+    text-align: center;
+}
+
+.profile .row1 img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+position: relative;
+top: 45px;
+
+}
+
+.profile .row2 {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+.profile .row2 div {
+    text-align: center;
+    color:rgb(110, 93, 93);
+}
+.profile .row2 h1 {
+    margin-bottom:  1px;
+}
+
+.profile .row3, .profile .row4 {
+    border-top: 1px solid grey;
+    padding: 15px; 
+    text-align: center;
+}
+
+.profile .row3 h3, .profile .row4 h3 {
+    color: grey;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.profile .row3> div, .profile .row4> div 
+{
+    font-weight: bold;
+}
+
+
+
+
+
+
+.centerBox
+{
+    display: block;
+    width: 500px;
+    height: 500px;
+    border: 1px solid grey;
+    float:left;
+}
+
+.centerBox a {
+    text-decoration: none;
+    color: grey;
+}
+.centerBox a::before {
+    content: '\f83e';
+    color: rgb(147, 197, 226);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 5px;
+    font-size: 12px;
+
+}
+.centerBox .Likes, .centerBox .Comments, .centerBox .Views {
+    color: rgb(136, 149, 156);
+}
+.centerBox .Likes::before {content: '\f004';
+    color: rgb(136, 149, 156);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 5px;
+    font-size: 12px;}
+
+.centerBox .Comments::before {
+    content: '\f075';
+    color: rgb(136, 149, 156);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.centerBox .Views::before {
+    content: '\f06e';
+    color: rgb(136, 149, 156);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 5px;
+    font-size: 12px;
+}

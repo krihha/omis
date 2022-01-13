@@ -20,7 +20,7 @@ background-repeat: no-repeat; */
 
 .loginBox {
     width: 250px;
-    height: 400px;
+    height: 465px;
     /*border: 1px solid rgb(221, 92, 130);*/
     border-radius:10px; 
 margin: auto;
@@ -66,7 +66,7 @@ margin-left: 25px;
 .loginBox input[type="button"]
     {
         height: 35px;
-        width: 125px;
+        width: 145px;
        margin-top: 10px;
        margin-bottom: 50px;
        background-color: rgb(250, 84, 228);
@@ -79,6 +79,7 @@ margin-left: 25px;
        font-size: 10px;
        -webkit-box-shadow: 5px 5px 15px 5px rgba(249,17,255,0.2); 
 box-shadow: 5px 5px 15px 5px rgba(249,17,255,0.3);
+cursor: pointer;
     }
 
     .loginBox .middleText
@@ -92,7 +93,47 @@ box-shadow: 5px 5px 15px 5px rgba(249,17,255,0.3);
     text-decoration:none;
     color: rgb(247, 72, 247);
     font-weight: 700;
-    
-    
+   
+    }
+    .loginBox .link:hover {
+        text-decoration: underline;
+    }
 
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+
+    width: 25px;
+    height: 25px;
+    
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5); 
+box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+border-radius: 50%;
+margin: 5px;
+
+}
+
+.fab.fa-facebook-f {
+    color:rgb(101, 101, 245)
+}
+
+.fab.fa-google {
+    color:rgb(104, 207, 147)
+}
+
+.social a:hover > .fab.fa-facebook-f {
+    color:blueviolet;
+}
+.social a:hover > .fab.fa-google {
+    color:blueviolet;
 }

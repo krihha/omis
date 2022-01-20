@@ -1,0 +1,37 @@
+.parent {
+    border: 1px solid gray;
+    display: grid;  /* flex dlja roditeljskogo */
+    /*flex-direction: row-reverse; column revers
+    flex-wrap perenosit na sled stroku
+    CSS-tricks.com/snippets/css/a-guide-to-flexbox/ 
+    
+    
+    justify-content: center;
+    height: 300px;
+    gap: 15px 25px; */
+
+    grid-template-columns: repeat(3, 1fr);
+    height: 300px;
+}
+
+.child {
+   /* border: 1px solid rgb(66, 245, 66);
+    margin: 5px;
+   /* flex-grow: 1; /* ravnqe vse. mozno otdeljnomu elementu napisatj i on budet drugim */
+
+}
+
+.growUP {flex-grow: 3;}
+
+/* justify позиционирование элементов
+align conтент внутреннее содержимое смещается так, как мы ему задаем
+
+гап gap  промежутки между виртуальными колонками
+
+row-gap; column-gap*/
+
+
+/*grid позиционирует и по вертикали и по горизонтали одновременно*/
+
+
+

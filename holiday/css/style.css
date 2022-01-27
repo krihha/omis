@@ -1,96 +1,224 @@
 .slideTitle {
-    position: absolute;
-    z-index: 10;
-    font-weight: bold;
-    color: white;
-    height: 100%;
+  position: absolute;
+  z-index: 10;
+  font-weight: bold;
+  color: white;
+  height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    padding-left: 75px;
-  }
-  
-  .carousel img {
-      max-height:  350px;
-    
-  }
-
-  
-  
-  
-
-.card-img {
-    border-radius: 0px;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 75px;
 }
 
+.carousel img {
+  max-height: 350px;
+}
 
+.card-img {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+}
 
 @media only screen and (min-width: 577px) {
-    .customRow {
-        position: relative;
-        top: -40px;
-    
-    }
+  .customRow {
+    position: relative;
+    top: -40px;
+  }
 
-    .customcard {
-        position: relative;
-  width:180px;
+  .customcard {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    border-radius: 0px;
+    margin: 5px;
+    padding: 0px;
+  }
+  .customWidthRow {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+}
+.customcard1 {
+  width: 180px;
   height: 200px;
   border-radius: 0px;
   margin: 5px;
-  padding: 0px; }
-} 
-.customcard1 {
- 
-width:180px;
-height: 200px;
-border-radius: 0px;
-margin: 5px;
-padding: 0px; 
-position: relative;
-background-image: url('https://picsum.photos/500/500?random=1');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+  padding: 0px;
+  position: relative;
+  background-image: url("https://picsum.photos/500/500?random=1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media only screen and (max-width: 576px) {
-    .customcard {
-        position: relative;
-  width:100%;
-  height: 200px;
-  border-radius: 0px;
-  margin: 5px;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding: 0px; }
-
-
+  .customcard {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 0px;
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
 
   .customcard1 {
     position: relative;
-width:100%;
-height: 200px;
-border-radius: 0px;
-margin: 5px;
-margin-left: 0px;
-margin-right: 0px;
-padding: 0px; 
-background-image: url('https://picsum.photos/250/250?random=1');
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 0px;
+    margin: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    background-image: url("https://picsum.photos/250/250?random=1");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+}
+
+.btnSize {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  text-transform: capitalize;
+}
+.customBtn1 {
+  background-color: #01b3a7;
+  border: 0;
+  color: white;
+}
+.customBtn2 {
+  background-color: #ffffff;
+  border: 2 solid black;
+  color: rgb(0, 0, 0);
+}
+
+.tab-pane {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+}
+
+/*NAV TABS*/
+.nav {
+  justify-content: space-between;
+  border-bottom: 0px !important;
+  border-bottom: 2px solid #cdcece !important;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  color: rgb(211, 211, 211);
+  width: 100%;
+  margin-bottom: -2px !important;
+}
+
+.nav-tabs .nav-link {
+}
+
+.nav-link.active {
+  color: #01b3a7 !important;
+  border-bottom: 2px solid #01b3a7 !important;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.nav-link:hover {
+  color: #01b3a7 !important;
+  border: 0px;
+}
+
+.nav-item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  border: 0px;
+}
+
+
+/*price tag*/
+
+.price {
+    height: 50px;
+    width: 50px;
+    background-color: #01b3a7;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 100%, 0 70%);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.customColWrapper {
+   border: 1px solid rgb(211, 211, 211);
+ 
+}
+
+
+/*div[class^="col"] {
+    padding: 0;
+}
+нашли все дивы, класс которых начинается с "кол"*/
+
+.customImageCol {
+    padding: 0px;
+}
+
+.bgImage {
+    height:350px ;
+    background-image: url('https://picsum.photos/1920/1920?random=9');
+    /*background-position: ;*/
+    background-size:contain;
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+
 }
 
 
 
 
+/*animation */
+
+#animation {
+    height: 350px;
 }
 
+#animation .box {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    position: relative;
+    animation-name: movingBox;
+    animation-duration: 4s;
+    animation-delay: 2s;
 
+}
 
+@keyframes movingBox {
+    0% {
+        left: 0;
+        background-color: blue;
+        transform: rotateZ(0deg);
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        left: 300px;
+        background-color: pink;
+        transform: rotateZ(360deg);
+    }
+}

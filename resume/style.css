@@ -4,11 +4,14 @@
 --box-bg-middle: #2d3d35;
 --box-bg-dark: #1f1f2b;
 --active-color: #f5c346;
+--body-bg: #1f1f2b;
 } 
 /* переменной присваиваем значение, чтобы не писать его тысячу раз*/
 
 
-
+body {
+  background-color: var(--body-bg);
+}
 .parent {
     border: 1px solid gray;
     display: grid;  /* flex dlja roditeljskogo */
@@ -163,7 +166,7 @@ row-gap; column-gap*/
       height: 85px;
       text-align: center;
       width: 60px;
-      margin: 25px;
+      margin: 5px;
       color: white;
   }
 
@@ -219,4 +222,59 @@ font-weight: bold; }
     bottom: 1px;
     right: 5px;
     color: var(--active-color);
+}
+
+/*additional slide description*/
+
+.slideTitle {
+  position: absolute;
+  z-index: 10;
+  padding: 50px;
+  font-weight: bold;
+}
+
+.carousel-item {}
+
+/*numbers*/
+
+#countNumbers{
+  list-style: none;
+  width:100%;
+  heght: 35px;
+  background-color: var(--box-bg-middle);
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#countNumbers li {
+  display:inline;
+  
+  color: white;
+  font-weight: bold;
+
+}
+
+#countNumbers li:first-child:before {
+  content:'10+';
+  color: var(--active-color);
+  margin-right: 10px;
+}
+
+#countNumbers li:last-child:before {
+  content:'20+';
+  color: var(--active-color);
+  margin-right: 10px;
+}
+
+#countNumbers li:nth-child(2):before {
+  content:'143';
+  color: var(--active-color);
+  margin-right: 10px;
+}
+#countNumbers li:nth-child(3):before {
+  content:'114';
+  color: var(--active-color);
+  margin-right: 10px;
 }

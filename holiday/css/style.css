@@ -1,0 +1,96 @@
+.slideTitle {
+    position: absolute;
+    z-index: 10;
+    font-weight: bold;
+    color: white;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 75px;
+  }
+  
+  .carousel img {
+      max-height:  350px;
+    
+  }
+
+  
+  
+  
+
+.card-img {
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media only screen and (min-width: 577px) {
+    .customRow {
+        position: relative;
+        top: -40px;
+    
+    }
+
+    .customcard {
+        position: relative;
+  width:180px;
+  height: 200px;
+  border-radius: 0px;
+  margin: 5px;
+  padding: 0px; }
+} 
+.customcard1 {
+ 
+width:180px;
+height: 200px;
+border-radius: 0px;
+margin: 5px;
+padding: 0px; 
+position: relative;
+background-image: url('https://picsum.photos/500/500?random=1');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+@media only screen and (max-width: 576px) {
+    .customcard {
+        position: relative;
+  width:100%;
+  height: 200px;
+  border-radius: 0px;
+  margin: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px; }
+
+
+
+  .customcard1 {
+    position: relative;
+width:100%;
+height: 200px;
+border-radius: 0px;
+margin: 5px;
+margin-left: 0px;
+margin-right: 0px;
+padding: 0px; 
+background-image: url('https://picsum.photos/250/250?random=1');
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+position: relative;
+}
+
+
+
+
+}
+
+
+

@@ -193,6 +193,7 @@
 
 #animation {
     height: 350px;
+    background-color: wheat;
 }
 
 #animation .box {
@@ -201,6 +202,8 @@
     height: 50px;
     border: 1px solid black;
     position: relative;
+    background-color: tomato;
+
     animation-name: movingBox;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -208,17 +211,30 @@
 }
 
 @keyframes movingBox {
-    0% {
-        left: 0;
+    0% { transform: translate(0px, 0px);
+        /*left: 0;
         background-color: blue;
-        transform: rotateZ(0deg);
+        /*transform: rotateZ(0deg);*/
     }
+
+    25% { 
+      transform: translate(0px, 300px )
+    }
+
     50% {
-        background-color: red;
+        /*background-color: red;*/
+        transform: translate(300px, 300px);
     }
-    100% {
-        left: 300px;
+
+    75% {
+       /* left: 300px;
         background-color: pink;
-        transform: rotateZ(360deg);
+        transform: rotateZ(360deg);*/
+
+        transform: translate(300px, 0px);
+    }
+
+    100% {
+      transform: translate(0px, 0px);
     }
 }

@@ -1,0 +1,98 @@
+body { 
+    background-color: rgb(96, 182, 173);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.waterdrop {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    
+    background-color: white;
+    border-radius: 50%;
+    top: 50px;
+  
+   
+    animation-name: waterdropFall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+.waterdrop::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 30px solid white;
+    top: -21px;
+}
+
+@keyframes waterdropFall {
+    
+ to{
+        transform: translateY(200px);
+   
+    }
+}
+
+/* waves */
+
+.waves {
+    position: relative;
+    border: 5px solid rgb(255, 255, 255);
+    width: 2px;
+    height: 1px;
+    border-radius: 50%;
+    opacity: 0;
+    top:200px;
+
+    animation-name: watercirkles2;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+/*
+.waves::after {
+    content: '';
+    position: absolute;
+    border: 5px solid white;
+    width: 2px;
+    height: 1px;
+    border-radius: 50%;
+    left: -100px;
+    top: -50px;
+
+
+    animation-name: watercirkles;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}*/
+
+@keyframes watercirkles {
+    from {
+        opacity: 1;
+    }
+
+
+    to { width: 200px;
+    height: 100px;}
+
+
+}
+@keyframes watercirkles2 {
+    from {
+        opacity: 1;
+    }
+
+
+    to { width: 400px;
+    height: 100px;}
+
+
+} 

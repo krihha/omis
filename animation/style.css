@@ -96,3 +96,151 @@ body {
 
 
 } 
+
+
+
+/* OCTOCAT */
+body {
+    margin:0;
+    overflow: hidden;
+    
+}
+.ocean {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0deg,#182848, #298029);
+   
+}
+
+.bubble {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background: white;
+    opacity: 0.1;
+    position:absolute;
+
+    animation-name: bubble, bubble-alternate;
+    animation-duration: 10s, 5s;
+    animation-timing-function: ease-in-out, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: normal, alternate;
+}
+
+@keyframes bubble {
+    to {transform: translateY(0%);}
+    from {transform: translateY(105vh);}
+}
+
+@keyframes bubble-alternate {
+    to {margin:50px;}
+    from {margin:0;}
+}
+
+
+.bubble-1 {
+    left: 5%;
+    animation-delay: 1s;
+    animation-duration: 10s;
+}
+
+.bubble-2 {
+    left: 10%;
+    animation-duration: 12s;
+}
+.bubble-3 {
+    left:15%;
+    animation-delay: 1.3s;
+    animation-duration: 5s;
+    width: 40px;
+    height: 40px;
+}
+.bubble-4 {
+    left:20%;
+    animation-delay: 0.5s;
+    animation-duration: 20s;
+}
+.bubble-5 {
+    left:25%;
+    animation-delay: 0.2;
+    animation-duration: 7s;
+    width: 40px;
+    height: 40px;
+}
+.bubble-6 {
+    left:30%;
+    animation-delay: 0.6s;
+    animation-duration: 3s;
+}
+.bubble-7 {
+    left:35%;
+    animation-delay: 1.2s;
+    animation-duration: 4s;
+}
+.bubble-8 {
+    left:40%;
+    animation-delay: 1s;
+    animation-duration: 15s;
+    width: 20px;
+    height: 20px;
+
+}
+.bubble-9 {left:45%;
+    animation-duration: 10s;}
+
+.bubble-10 {
+    left:50%;
+    animation-duration: 8s;}
+
+
+
+.octo {
+    background: url('img/octocat.png');
+    display: block;
+    width: 200px;
+    height: 300px;
+    background-position-x: -400px;
+    position: relative;
+    top: calc(50% - 150px);
+
+    animation-name: swim, nextDirectionPicture;
+    animation-duration: 7s, 7s;
+    animation-iteration-count: infinite, infinite;
+    animation-timing-function: ease-in-out, steps(1);
+
+    
+}
+
+@keyframes swim {
+    0%{}
+    20%{
+        transform: translateX(500px);
+    }
+    40%{transform: translateX(500px) translateY(-150px);}
+
+    60%{transform: translateX(0px) translateY(-150px);}
+
+    80%{transform: translateX(0px) translateY(150px);}
+    100%{transform: translateX(0px) translateY(0px);}
+}
+
+/*
+Если будем делать не в пикселях, а в vw&vh, то можно тогда подогнать 
+эту анимацию к размеру экрана. Будет высчитывать от видимой части экрана
+Например 
+translateX(-10vw) translateY(10vh)*/
+
+
+
+@keyframes nextDirectionPicture {
+    0%{}
+
+    20%{background-position-x: -200px;}
+    40%{background-position-x: -600px;}
+    60%{background-position-x: 0px;}
+    80%{background-position-x: -200px;}
+    100%{background-position-x: 0px;}
+    
+}
+

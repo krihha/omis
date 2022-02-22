@@ -236,9 +236,25 @@ function generateBox(content){
 
 let box = document.getElementById('box')
 let btn = document.getElementById('button')
+let btnDown = document.getElementById('buttonDown')
+
 let leftWidth = 0;
+let topWidth = 0;
 
 btn.addEventListener('click', function(){
     leftWidth += 10
     box.style.left = leftWidth + 'px'
 })
+
+btnDown.addEventListener('click', function(){
+    topWidth += 10
+    box.style.top = topWidth + 'px'
+})
+
+
+
+/* multiply table TABLICA UMNOZENIJA*/
+
+
+
+}

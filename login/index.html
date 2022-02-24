@@ -24,7 +24,7 @@
         <form action="">
             <input type="text" name="" id="username" placeholder="username or email">
             <input type="password" name="" id="password" placeholder="password">
-            <input type="button" id="btnSubmit" value="sign in">
+            <input type="button" data-micromodal-trigger="modal-1" id="btnSubmit" value="sign in">
         </form>
 
      <div class="middleText">or login with</div>
@@ -47,8 +47,9 @@
               </h2>
               <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
             </header>
+
             <div class="modal-content-content">
-              <div class="modal__content">
+              <div class="modal__content" id="modal-content">
                 Modal content
               </div>
               <footer class="modal__footer">
